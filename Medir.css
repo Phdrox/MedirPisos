@@ -1,0 +1,132 @@
+/*# sourceMappingURL=Medir.scss.map */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixa {
+  height: 650px;
+  width: 450px;
+  position: relative;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: 0.3s all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Cinzel", serif;
+  text-align: center;
+}
+.caixa button {
+  margin-top: 40px !important;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(31, 90, 146);
+  color: white;
+  box-shadow: 0px 0px 10px rgb(93, 92, 92);
+  cursor: pointer;
+  font-family: "Cinzel", serif;
+}
+.caixa .Parte1 {
+  text-align: center;
+  margin-top: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.caixa .Parte1 .largura {
+  margin-right: 50px;
+}
+.caixa .Parte1 i {
+  margin-right: 10%;
+}
+.caixa .Parte1 input {
+  margin-top: 10px;
+  width: 50px;
+  border-radius: 2px;
+  border: 1px solid rgb(176, 176, 176);
+  text-align: center;
+}
+.caixa .Parte2 {
+  text-align: center;
+  margin-top: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.caixa .Parte2 .largura {
+  margin-right: 50px;
+}
+.caixa .Parte2 i {
+  margin-right: 10%;
+}
+.caixa .Parte2 input {
+  text-align: center;
+  margin-top: 10px;
+  width: 50px;
+  border-radius: 2px;
+  border: 1px solid rgb(176, 176, 176);
+}
+.caixa #resultado {
+  margin-top: 15%;
+  height: 35px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Chakra Petch", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa::after {
+  border-radius: 5px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: linear-gradient(50deg, rgb(204, 0, 255), rgb(0, 255, 247), rgb(0, 255, 34));
+  transition: 1s all;
+  animation: anima 3s infinite ease-in-out;
+}
+
+@keyframes anima {
+  0% {
+    background-image: linear-gradient(50deg, rgb(204, 0, 255), rgb(0, 255, 247), rgb(0, 255, 34));
+  }
+  25% {
+    background-image: linear-gradient(100deg, rgb(204, 0, 255), rgb(0, 255, 247), rgb(0, 255, 34));
+  }
+  50% {
+    background-image: linear-gradient(150deg, rgb(204, 0, 255), rgb(0, 255, 247), rgb(0, 255, 34));
+  }
+  75% {
+    background-image: linear-gradient(200deg, rgb(204, 0, 255), rgb(0, 255, 247), rgb(0, 255, 34));
+  }
+  100% {
+    background-image: linear-gradient(250deg, rgb(204, 0, 255), rgb(0, 255, 247), rgb(0, 255, 34));
+  }
+}
+
+/*# sourceMappingURL=Medir.css.map */

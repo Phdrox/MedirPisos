@@ -1,0 +1,2 @@
+Abra com o editor VSCode ,como a extensão Live Server,e clique em Go Live;
+Pois o Navegador não quis colaborar com o design e com o Java Script;
